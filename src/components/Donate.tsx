@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const Donate = () => {
   const handleDonate = () => {
     // This would typically open a payment processor
-    window.open("https://www.paypal.com/donate", "_blank");
+    window.open("#", "_blank");
   };
 
   const donationMethods = [
@@ -68,13 +68,13 @@ const Donate = () => {
         </div>
 
         <div className="text-center">
-          <Button
+          {/* <Button
             onClick={handleDonate}
             size="lg"
             className="bg-gradient-to-r from-secondary to-accent text-accent-foreground hover:opacity-90 shadow-[var(--shadow-gold)] text-lg px-12 py-6 font-bold"
           >
             Give Now
-          </Button>
+          </Button> */}
           <p className="text-primary-foreground/70 text-sm mt-4">
             "Give, and it will be given to you..." — Luke 6:38
           </p>

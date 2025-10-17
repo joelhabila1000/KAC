@@ -20,7 +20,7 @@ const Header = () => {
     { label: "Services", href: "#services" },
     { label: "Events", href: "#events" },
     { label: "Gallery", href: "#gallery" },
-    { label: "Contact", href: "#contact" },
+    // { label: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -47,7 +47,7 @@ const Header = () => {
                 <img src="/kpc.webp" alt="Kingdom Assurance logo" className="w-10 h-10 rounded-full object-cover" />
             </div>
             <div>
-              <h1 className="font-serif font-bold text-lg leading-tight text-gold">
+              <h1 className="font-serif font-bold text-lg leading-tight text-white">
                 Kingdom <br></br> 
                 Assurance <br></br>
                 Church
@@ -62,16 +62,16 @@ const Header = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className={`${isScrolled ? 'text-foreground' : 'text-gold'} hover:text-secondary transition-colors font-medium`}
+                className={`${isScrolled ? 'text-gold' : 'text-white'} hover:text-secondary transition-colors font-medium`}
               >
                 {item.label}
               </button>
             ))}
             <Button
-              onClick={() => scrollToSection("#donate")}
+              onClick={() => scrollToSection("#contact")}
               className="bg-gradient-to-r from-secondary to-accent text-accent-foreground hover:opacity-90 shadow-[var(--shadow-gold)] font-semibold"
             >
-              Donate
+              Contact
             </Button>
           </div>
 
@@ -92,17 +92,17 @@ const Header = () => {
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-foreground hover:text-primary transition-colors font-medium text-left py-2"
+                  className="text- hover:text-primary transition-colors font-medium text-left py-2"
                 >
                   {item.label}
                 </button>
               ))}
-              <Button
+              {/* <Button
                 onClick={() => scrollToSection("#donate")}
                 className="bg-gradient-to-r from-secondary to-accent text-accent-foreground hover:opacity-90 shadow-[var(--shadow-gold)] font-semibold"
               >
                 Donate
-              </Button>
+              </Button> */}
             </div>
           </div>
         )}
