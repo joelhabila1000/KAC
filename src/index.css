@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 30 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 20% 20%;
+
+    /* Deep Royal Gold - Primary brand color */
+    --primary: 46 65% 47%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 46 70% 55%;
+
+    /* Light Gold - Secondary accent */
+    --secondary: 34 66% 72%;
+    --secondary-foreground: 30 20% 20%;
+
+    --muted: 34 30% 95%;
+    --muted-foreground: 30 15% 45%;
+
+    /* Deep gold accent for CTAs */
+    --accent: 46 65% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 34 20% 88%;
+    --input: 34 20% 88%;
+    --ring: 46 65% 47%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(30 20% 15% / 0.95), hsl(30 20% 25% / 0.9));
+    --gradient-gold: linear-gradient(135deg, hsl(34 66% 72%), hsl(46 65% 47%));
+    --gradient-overlay: linear-gradient(180deg, transparent, hsl(30 20% 15% / 0.8));
+
+    /* Shadows */
+    --shadow-gold: 0 10px 40px hsl(46 65% 47% / 0.3);
+    --shadow-elegant: 0 10px 30px hsl(46 65% 47% / 0.15);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 30 20% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 30 20% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 30 20% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 46 65% 47%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 34 66% 72%;
+    --secondary-foreground: 30 20% 10%;
+
+    --muted: 30 15% 20%;
+    --muted-foreground: 34 20% 70%;
+
+    --accent: 46 65% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 25%;
+    --input: 30 15% 25%;
+    --ring: 46 65% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
