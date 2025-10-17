@@ -66,7 +66,7 @@ const Hero = () => {
               onClick={() => document.querySelector("#mission")?.scrollIntoView({ behavior: "smooth" })}
               size="lg"
               variant="outline"
-              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6 font-semibold"
+              className="border-2 border-primary-foreground text-primary hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6 font-semibold"
             >
               Learn More
             </Button>
